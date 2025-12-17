@@ -16,14 +16,44 @@ class Home extends StatelessWidget{
         ),
         backgroundColor: Colors.deepPurpleAccent,
       ),
-      body: Center(
-        child: Text(
-          'Hello Rayhan!',
-          style: TextStyle(
-            color: Colors.purple,
-            fontSize: 30,
-            fontWeight: FontWeight.bold
+      body: SingleChildScrollView(
+       scrollDirection: Axis.horizontal,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          //crossAxisAlignment: CrossAxisAlignment.center,
+          children:[
+            Text(
+            'Hello Rayhan!',
+            style: TextStyle(
+              color: Colors.purple,
+              fontSize: 30,
+              fontWeight: FontWeight.bold
+            ),
           ),
+        
+            Text(
+              'Welcome to Flutter',
+              style: TextStyle(fontSize: 20,color: Colors.black),
+            ),
+        
+            Icon(
+              Icons.thumb_up,
+              color: Colors.red,
+              size: 50,
+            ),
+        
+            // Expanded(
+            //   child: Text(
+            //     'This is a very long text that will normally crash the screen but now it is safe!',
+            //     style: TextStyle(fontSize: 20, color: Colors.red),
+            //   ),
+            // ),
+            
+            Text(
+              "One day I'll shine In sha Allah",
+              style: TextStyle(fontSize: 20, color: Colors.black),
+            )
+        ],
         ),
       ),
     );
