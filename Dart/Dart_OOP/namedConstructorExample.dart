@@ -1,9 +1,9 @@
 class User {
-  String name;
-  String email;
-  int age;
+  String? name;
+  String? email;
+  int? age;
 
-  User(this.name, this.email, this.age);
+  User({this.name, this.email, this.age});
   // User(String name, String email, int age) {
   //   this.name = name;
   //   this.email = email;
@@ -24,7 +24,7 @@ class User {
 }
 
 void main() {
-  var normalUser = User('Rayhan', 'rayhan19122@gmail.com', 23);
+  var normalUser = User(name: 'Rayhan', email: 'rayhan19122@gmail.com',age:23);
   var guestUser = User.guest();
   var dbUser = User.formJson({
     'name': 'Abir',
