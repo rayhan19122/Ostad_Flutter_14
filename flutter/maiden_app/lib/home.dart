@@ -38,7 +38,7 @@ class Home extends StatelessWidget{
         
             Icon(
               Icons.thumb_up,
-              color: Colors.red,
+              color: Colors.green,
               size: 50,
             ),
         
