@@ -24,24 +24,55 @@ class Home extends StatelessWidget{
           children: [
             Container(
               alignment: Alignment.center,
+              height: 50,
+              width: 120,
               child: Text(
                 'Welcome',
-                style: TextStyle(),
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+              ),
+              decoration: BoxDecoration(
+                color: Colors.deepPurple.withOpacity(0.5),
+                borderRadius: BorderRadius.circular(5),
+                border: Border.all(
+                  color: Colors.deepPurple,
+                  width: 1.5,
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.2),
+                    blurRadius: 4,
+                    offset: Offset(4, 8),
+                  ),
+                ],
+                
               ),
             ),
 
+            SizedBox(height: 70,),
+
+
             TextField(
               controller: phoneController,
-              //keyboardType: TextInputType.phone,
+              keyboardType: TextInputType.phone,
               decoration: InputDecoration(
                 labelText:'Phone Number',
                 labelStyle: TextStyle(fontSize: 18, color: Colors.black),
 
                 hintText: 'Enter Phone Number',
                 hintStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.grey.withOpacity(0.5)),
-                border: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black),
+                // border: OutlineInputBorder(
+                //   borderSide: BorderSide(color: Colors.green, width: 10),
+                //   borderRadius: BorderRadius.circular(15),
+                // ),
+
+                enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
+                  borderSide: BorderSide(color: Colors.black, width: 1.5),
+                ),
+
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(15),
+                  borderSide: BorderSide(color: Colors.deepPurple, width: 1.5),
                 ),
 
                 prefixIcon: Icon(Icons.phone),
@@ -62,9 +93,24 @@ class Home extends StatelessWidget{
 
                 hintText: 'Enter Password',
                 hintStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.grey.withOpacity(0.5)),
-                border: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black),
+                // border: OutlineInputBorder(
+                //   borderSide: BorderSide(color: Colors.black),
+                //   borderRadius: BorderRadius.circular(15),
+                // ),
+
+                enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
+                  borderSide: BorderSide(
+                    color: Colors.black,
+                    width: 1.5,
+                  ),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(15),
+                  borderSide: BorderSide(
+                    color: Colors.deepPurple, // try obvious color
+                    width: 1.5,
+                  ),
                 ),
 
                 prefixIcon: Icon(Icons.lock),
