@@ -17,9 +17,8 @@ Given a date in `DD/MM/YYYY` format, find the weekday (`Sunday … Saturday`) us
 2. [Weekday Encoding](#weekday-encoding)
 3. [Leap Year Algorithm](#leap-year-algorithm)
 4. [Complete Algorithm Steps](#complete-algorithm-steps)
-5. [Flowchart](#flowchart)
-6. [Pseudocode](#pseudocode)
-7. [Summary of Key Terms](#summary-of-key-terms)
+5. [Pseudocode](#pseudocode)
+6. [Summary of Key Terms](#summary-of-key-terms)
 
 ---
 
@@ -185,55 +184,7 @@ weekday = weekdays[weekdayIndex]
 
 ---
 
-## 5️⃣ Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start: Input day, month, year]) --> InitWeekdays[Initialize Weekdays Array<br/>0=Sunday, 1=Monday, ..., 6=Saturday]
-    
-    InitWeekdays --> CheckLeap{Is Leap Year?<br/>year % 400 == 0 OR<br/>year % 4 == 0 AND<br/>year % 100 != 0}
-    
-    CheckLeap -->|Yes| SetLeapAnchors[Set Leap Year Anchors:<br/>janAnchor = 4<br/>febAnchor = 29]
-    CheckLeap -->|No| SetNormalAnchors[Set Normal Year Anchors:<br/>janAnchor = 3<br/>febAnchor = 28]
-    
-    SetLeapAnchors --> SetMonthArray[Create Month Anchor Array:<br/>Jan=janAnchor, Feb=febAnchor,<br/>Mar=14, Apr=4, May=9, Jun=6,<br/>Jul=11, Aug=8, Sep=5,<br/>Oct=10, Nov=7, Dec=12]
-    SetNormalAnchors --> SetMonthArray
-    
-    SetMonthArray --> CalcCentury[Calculate Century:<br/>century = floor year / 100]
-    
-    CalcCentury --> CalcAnchor[Calculate Century Anchor:<br/>anchor = 5 × century % 4 + 2 % 7]
-    
-    CalcAnchor --> CalcYearParts[Calculate Year Parts:<br/>y = year % 100<br/>a = floor y / 12<br/>b = y % 12<br/>c = floor b / 4]
-    
-    CalcYearParts --> CalcDoomsday[Calculate Year Doomsday:<br/>doomsday = anchor + a + b + c % 7]
-    
-    CalcDoomsday --> GetRefDay[Get Reference Day:<br/>referenceDay = monthAnchor[month]]
-    
-    GetRefDay --> CalcDiff[Calculate Difference:<br/>diff = day - referenceDay]
-    
-    CalcDiff --> CalcWeekday[Calculate Weekday Index:<br/>weekdayIndex = doomsday + diff % 7]
-    
-    CalcWeekday --> CheckNegative{weekdayIndex < 0?}
-    
-    CheckNegative -->|Yes| FixNegative[Add 7:<br/>weekdayIndex = weekdayIndex + 7]
-    CheckNegative -->|No| GetResult[Get Result:<br/>weekday = weekdays[weekdayIndex]]
-    
-    FixNegative --> GetResult
-    
-    GetResult --> End([End: Return Weekday Name])
-    
-    style Start fill:#e1f5e1
-    style End fill:#ffe1e1
-    style CheckLeap fill:#fff4e1
-    style CheckNegative fill:#fff4e1
-    style CalcDoomsday fill:#e1f0ff
-    style CalcAnchor fill:#e1f0ff
-    style GetResult fill:#f0e1ff
-```
-
----
-
-## 6️⃣ Pseudocode
+## 5️⃣ Pseudocode
 
 ```plaintext
 function weekdayFromDate(day, month, year):
@@ -289,7 +240,7 @@ function isLeapYear(year):
 
 ---
 
-## 7️⃣ Summary of Key Terms
+## 6️⃣ Summary of Key Terms
 
 | Term | Definition |
 |------|------------|
