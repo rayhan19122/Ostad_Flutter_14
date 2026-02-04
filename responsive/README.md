@@ -1,16 +1,23 @@
-# responsive
+# responsive_UI_Learning
 
-A new Flutter project.
+## 📸 MobileScreen Preview
 
-## Getting Started
+<p align="center">
+  <img src="https://github.com/rayhan19122/Ostad_Flutter_14/blob/8a80893f7266da8d2aa9ee6b4f88fa26562b20f6/responsive/Mobile_UI.png" width="300" alt="Ostad UI Screenshot">
+</p>
 
-This project is a starting point for a Flutter application.
+---
+## 📸 TabletScreen Preview
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">
+  <img src="[https://github.com/rayhan19122/Ostad_Flutter_14/blob/8a80893f7266da8d2aa9ee6b4f88fa26562b20f6/responsive/Mobile_UI.png](https://github.com/rayhan19122/Ostad_Flutter_14/blob/8a80893f7266da8d2aa9ee6b4f88fa26562b20f6/responsive/Tablet_UI.png)" width="300" alt="Ostad UI Screenshot">
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
+## 📸 DesktopScreen Preview
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+  <img src="[https://github.com/rayhan19122/Ostad_Flutter_14/blob/8a80893f7266da8d2aa9ee6b4f88fa26562b20f6/responsive/Mobile_UI.png](https://github.com/rayhan19122/Ostad_Flutter_14/blob/8a80893f7266da8d2aa9ee6b4f88fa26562b20f6/responsive/Desktop_UI.png)" width="300" alt="Ostad UI Screenshot">
+</p>
+
+---
