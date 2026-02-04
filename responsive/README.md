@@ -14,7 +14,7 @@
 </p>
 
 ---
-## 📸 DesktopScreen Previe
+## 📸 DesktopScreen Preview
 
 <p align="center">
   <img src="https://github.com/rayhan19122/Ostad_Flutter_14/blob/8a80893f7266da8d2aa9ee6b4f88fa26562b20f6/responsive/Desktop_UI.png" width="600" alt="Ostad UI Screenshot">
